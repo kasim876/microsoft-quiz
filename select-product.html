@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1 class="title">Цифровой продукт</h1>
+      <p class="descr">
+        Выберите продукт
+      </p>
+    </div>
+    <div class="right">
+    </div>
+  </div>
+  <div class="products-container">
+    <ul class="products">
+      <li class="products__item products__item--big">
+        <div class="products__item-main">
+          <img src="./assets/images/win11-image.jpg" alt="">
+          <label class="products__answer">
+            <input type="radio" name="answer" class="products__answer-input">
+            <span class="products__answer-caption">
+              Электронная лицензия Windows или Office (ESD)
+            </span>
+          </label>
+        </div>
+        <ul class="products-info">
+          <li class="products-info__item">
+            <h2 class="products-info__name">Предназначение</h2>
+            <p class="products-info__descr">
+              Электронные лицензии применяются для самостоятельной установки пользователями на их компьютеры
+            </p>
+          </li>
+          <li class="products-info__item">
+            <h2 class="products-info__name">Форма поставки</h2>
+            <p class="products-info__descr">
+              Как правило, электронные лицензии поставляются в виде ключа продукта и ссылки на загрузку, которые покупатель получает по электронной почте
+            </p>
+          </li>
+          <li class="products-info__item">
+            <h2 class="products-info__name">Логистика поставки</h2>
+            <p class="products-info__descr">
+              Подлинные электронные лицензии поставляются через официальных дистрибуторов Microsoft и партнеров, которые с ними взаимодействуют
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li class="products__item">
+        <img src="./assets/images/products1.png" alt="">
+        <label class="products__answer">
+          <input type="radio" name="answer" class="products__answer-input">
+          <span class="products__answer-caption">
+            Скан/фотография наклейки СОА (или других продуктов)
+          </span>
+        </label>
+      </li>
+      <li class="products__item">
+        <img src="./assets/images/products2.png" alt="">
+        <label class="products__answer">
+          <input type="radio" name="answer" class="products__answer-input">
+          <span class="products__answer-caption">
+            Учетные данные (логин/пароль для доступа к учетной записи)
+          </span>
+        </label>
+      </li>
+    </ul>
+    <div class="products-container__bottom">
+      <button class="btn-reset button-white products-container__btn products-container__btn--white">Назад</button>
+      <button class="btn-reset button-blue products-container__btn products-container__btn--blue">Далее</button>
+    </div>
+  </div>
+</body>
+</html>
