@@ -60,7 +60,8 @@ a {
 }
 
 .left {
-  flex-basis: 45%;
+  flex-basis: 40%;
+  flex-shrink: 0;
   background-color: #274b47;
   padding: 25px 80px;
 }
@@ -73,7 +74,7 @@ a {
 }
 
 .right {
-  flex-basis: 55%;
+  flex-basis: 60%;
   padding-top: 180px;
   background-image: url("../assets/images/bg.jpg");
   background-repeat: repeat-x;
@@ -432,6 +433,10 @@ a {
   background-color: #f5f5f5;
 }
 
+.versions-list--big {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .versions-item {
   width: 100%;
   border: 1px solid #c7c7c7;
@@ -439,8 +444,13 @@ a {
   background-color: #fff;
 }
 
+.versions-list--big .versions-item {
+  padding: 20px;
+}
+
 .versions-item__img {
   display: block;
+  width: 100%;
   margin-bottom: 16px;
 }
 
@@ -450,6 +460,10 @@ a {
   line-height: 120%;
   color: #272727;
   text-align: center;
+}
+
+.versions-list--big .versions-item__caption {
+  text-align: left;
 }
 
 .signs-list-wrapper {
