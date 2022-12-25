@@ -137,7 +137,7 @@ a {
 
 .main-button {
   margin-top: auto;
-  width: 400px;
+  max-width: 400px;
   height: 60px;
 }
 
@@ -195,6 +195,7 @@ a {
 .answer__caption::before {
   content: "";
   display: block;
+  flex-shrink: 0;
   margin-right: 40px;
   margin-left: 6px;
   border-radius: 50%;
@@ -292,8 +293,8 @@ a {
 }
 
 .products__item--big img {
-  width: 520px;
-  height: 435px;
+  max-width: 520px;
+  height: auto;
   object-fit: cover;
 }
 
@@ -394,6 +395,7 @@ a {
 }
 
 .alert__more-info {
+  margin-bottom: 60px;
   font-size: 28px;
   line-height: 120%;
   color: #fff;
@@ -526,4 +528,105 @@ a {
   height: 24px;
   margin-right: 10px;
   background-image: url("../assets/images/svg/Info_fill.svg");
+}
+
+@media screen and (max-width: 1530px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .left {
+    padding: 40px 15px;
+  }
+
+  .left--height100 {
+    min-height: 0;
+    padding: 40px 15px;
+  }
+
+  .main-title {
+    font-size: 48px;
+  }
+
+  .main-descr {
+    font-size: 20px;
+  }
+
+  .products {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .products-container__bottom {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .versions-item {
+    padding: 20px;
+  }
+
+  .versions-item__caption {
+    font-size: 14px;
+  }
+
+  .products__item {
+    grid-column: 8 span;
+  }
+
+  .products-info {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .versions-list {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .alert__caption {
+    font-size: 28px;
+  }
+
+  .alert__descr {
+    font-size: 16px;
+  }
+
+  .alert__more-info {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .descr {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .question__caption {
+    font-size: 24px;
+  }
+
+  .answer {
+    height: 100px;
+    padding: 0 15px;
+  }
+
+  .products-container {
+    padding: 15px;
+  }
+
+  .products__item {
+    padding: 20px;
+  }
+
+  .products__answer-caption {
+    font-size: 14px;
+  }
 }
