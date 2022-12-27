@@ -65,6 +65,9 @@ a {
   flex-basis: 40%;
   background-color: #274b47;
   padding: 30px 50px;
+}
+
+.left--height100 {
   min-height: 100vh;
 }
 
