@@ -9,10 +9,22 @@
 </head>
 <body>
   <div class="container">
-    <div class="left left--height100">
+    <div class="left">
       <h1 class="title">Физический продукт</h1>
       <p class="descr">
         Выберите продукт
+      </p>
+    </div>
+    <div class="right">
+      <div class="right-img">
+        <img src="./assets/images/bg.jpg" alt="" aria-hidden="true">
+      </div>
+    </div>
+  </div>
+  <div class="container products-wrapper">
+    <div class="left">
+      <p class="products-caption">
+        Вы выбрали лицензию в физическом виде. Получите рекомендации, которые помогут вам в приобретении подлинной версии программного обеспечения Microsoft, для этого выберите тип:
       </p>
       <div class="products-container__bottom">
         <button class="btn-reset button-white products-container__btn products-container__btn--white">Назад</button>
@@ -20,46 +32,109 @@
       </div>
     </div>
     <div class="right">
-      <ul class="products products--grid">
-        <li class="products__item">
-          <div class="products__item-main">
-            <img src="./assets/images/products3.jpg" alt="">
-            <label class="products__answer">
-              <input type="radio" name="answer" class="products__answer-input">
-              <span class="products__answer-caption">
-                Электронная лицензия Windows или Office (ESD)
-              </span>
-            </label>
-          </div>
-        </li>
-        <li class="products__item">
-          <img src="./assets/images/products3.jpg" alt="">
-          <label class="products__answer">
-            <input type="radio" name="answer" class="products__answer-input">
-            <span class="products__answer-caption">
-              Скан/фотография наклейки СОА (или других продуктов)
-            </span>
-          </label>
-        </li>
-        <li class="products__item">
-          <img src="./assets/images/products4.jpg" alt="">
-          <label class="products__answer">
-            <input type="radio" name="answer" class="products__answer-input">
-            <span class="products__answer-caption">
-              Учетные данные (логин/пароль для доступа к учетной записи)
-            </span>
-          </label>
-        </li>
-        <li class="products__item">
-          <img src="./assets/images/products5.jpg" alt="">
-          <label class="products__answer">
-            <input type="radio" name="answer" class="products__answer-input">
-            <span class="products__answer-caption">
-              Скан/фотография наклейки СОА (или других продуктов)
-            </span>
-          </label>
-        </li>
-      </ul>
+      <div class="products-container">
+        <ul class="products">
+          <li class="products__item products__item--big">
+            <div class="products__item-main">
+              <div class="products__item-main">
+                <img src="./assets/images/products6.jpg" alt="">
+                <label class="products__answer">
+                  <input type="radio" name="answer" class="products__answer-input">
+                  <span class="products__answer-caption">
+                    Коробочная версия Windows или Office (FPP)
+                  </span>
+                </label>
+              </div>
+            </div>
+            <ul class="products-info">
+              <li class="products-info__item">
+                <h2 class="products-info__name">Предназначение</h2>
+                <p class="products-info__descr">
+                  Коробочные версии применяются для самостоятельной установки пользователями на их компьютеры
+                </p>
+              </li>
+              <li class="products-info__item">
+                <h2 class="products-info__name">Форма поставки</h2>
+                <p class="products-info__descr">
+                  Коробочные версии поставляются в виде запечатанных коробок с нанесенными на них наклейками-сертификатами СОА
+                </p>
+              </li>
+              <li class="products-info__item">
+                <h2 class="products-info__name">Логистика поставки</h2>
+                <p class="products-info__descr">
+                  Подлинные коробочные лицензии поставляются через официальных дистрибуторов Microsoft и партнеров, которые с ними взаимодейсвуют
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="products__item products__item--big">
+            <div class="products__item-main">
+              <img src="./assets/images/products7.jpg" alt="">
+              <label class="products__answer">
+                <input type="radio" name="answer" class="products__answer-input">
+                <span class="products__answer-caption">
+                  Карточка с ключем
+                </span>
+              </label>
+            </div>
+          </li>
+          <li class="products__item products__item--big">
+            <div class="products__item-main">
+              <img src="./assets/images/products8.jpg" alt="">
+              <label class="products__answer">
+                <input type="radio" name="answer" class="products__answer-input">
+                <span class="products__answer-caption">
+                  ОЕМ-версия Windows (COEM)
+                </span>
+              </label>
+            </div>
+            <ul class="products-info">
+              <li class="products-info__item">
+                <h2 class="products-info__name">Предназначение</h2>
+                <p class="products-info__descr">
+                  Коробочные версии применяются для самостоятельной установки пользователями на их компьютеры
+                </p>
+              </li>
+              <li class="products-info__item">
+                <h2 class="products-info__name">Форма поставки</h2>
+                <p class="products-info__descr">
+                  Коробочные версии поставляются в виде запечатанных коробок с нанесенными на них наклейками-сертификатами СОА
+                </p>
+              </li>
+              <li class="products-info__item">
+                <h2 class="products-info__name">Логистика поставки</h2>
+                <p class="products-info__descr">
+                  Подлинные коробочные лицензии поставляются через официальных дистрибуторов Microsoft и партнеров, которые с ними взаимодейсвуют
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="products__item products__item--big">
+            <div class="products__item-main">
+              <img src="./assets/images/products9.jpg" alt="">
+              <label class="products__answer">
+                <input type="radio" name="answer" class="products__answer-input">
+                <span class="products__answer-caption">
+                  Наклейка-сертификат СОА
+                </span>
+              </label>
+            </div>
+            <ul class="products-info">
+              <li class="products-info__item">
+                <h2 class="products-info__name">Наклейка с ключом продукта</h2>
+                <p class="products-info__descr">
+                  Наклейка с ключом продукта — это белая или оранжевая наклейка, которая поставляется вместе с установочным носителем на CD- или DVD-диске либо на USB-устройстве и сертификатом подлинности (COA) продукта и содержит 25-значный ключ продукта.<br>
+                  Наклейку с ключом продукта и сертификатом подлинности (COA) не следует покупать отдельно.
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="products-container__bottom">
+          <button class="btn-reset button-white products-container__btn products-container__btn--white">Назад</button>
+          <button class="btn-reset button-blue products-container__btn products-container__btn--blue">Далее</button>
+        </div>
+      </div>
     </div>
   </div>
 </body>
