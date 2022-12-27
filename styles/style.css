@@ -158,6 +158,9 @@ a {
 .question {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding-top: 180px;
+  height: 100%;
 }
 
 .question__caption {
@@ -301,6 +304,17 @@ a {
   grid-column: 8 span;
   grid-row: 2 span;
   order: 1;
+}
+
+.products__item--big:has(.products__answer-input:checked) {
+  display: flex;
+  grid-column: 8 span;
+  grid-row: 3 span;
+  order: 1;
+}
+
+.products:has(.products__answer-input:checked) .products__item--big:not(:has(.products__answer-input:checked)) {
+  grid-column: 4 span;
 }
 
 .products:has(.products__answer-input:checked) .products__item:not(:has(.products__answer-input:checked)) img {
