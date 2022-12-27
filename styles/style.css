@@ -60,32 +60,23 @@ a {
 }
 
 .left {
-  flex-basis: 40%;
-  flex-shrink: 0;
-  background-color: #274b47;
-  padding: 25px 80px;
-}
-
-.left--height100 {
   display: flex;
   flex-direction: column;
-  padding: 50px 80px;
+  flex-basis: 40%;
+  background-color: #274b47;
+  padding: 30px 50px;
   min-height: 100vh;
 }
 
 .right {
+  display: flex;
+  flex-direction: column;
   flex-basis: 60%;
-  padding-top: 180px;
-  background-image: url("../assets/images/bg.jpg");
-  background-repeat: repeat-x;
 }
 
-.right__img {
-  height: 100%;
-  background-image: url("../assets/images/win11-image.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 30%;
+.right-img img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .button-white {
@@ -129,16 +120,27 @@ a {
 }
 
 .main-descr {
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   font-size: 28px;
   line-height: 120%;
   color: #fff;
+}
+
+.main-descr p:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .main-button {
   margin-top: auto;
   max-width: 400px;
   height: 60px;
+}
+
+.main-img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  flex-grow: 1;
 }
 
 .question {
